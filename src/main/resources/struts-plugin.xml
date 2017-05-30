@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+
+	<package name="webjars-default" extends="struts-default" abstract="true" strict-method-invocation="true">
+		
+		<result-types>
+			<result-type name="webjars" class="org.apache.struts2.webjars.WebjarsStreamResult" />
+		</result-types>
+		
+		<global-results>
+			<result name="webjars" type="webjars">
+				<param name="inputPattern">/webjars/**</param>
+			</result>
+		</global-results>
+		
+	</package>
+
+</struts>
