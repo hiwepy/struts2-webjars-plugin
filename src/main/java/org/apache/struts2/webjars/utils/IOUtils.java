@@ -32,14 +32,11 @@ import org.apache.commons.lang3.Validate;
 
 /**
  * 
- * *******************************************************************
- * 
- * @className ： IOUtils
- * @description ： 扩展org.apache.commons.io.IOUtils工具对象
- * @author ： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
- * @date ： Dec 15, 2016 12:08:48 PM
- * @version V1.0
- *          *******************************************************************
+ * @className	： IOUtils
+ * @description	：  扩展org.apache.commons.io.IOUtils工具对象
+ * @author 		： <a href="https://github.com/vindell">vindell</a>
+ * @date		： 2017年9月12日 下午10:54:38
+ * @version 	V1.0
  */
 public abstract class IOUtils extends org.apache.commons.io.IOUtils {
 
@@ -426,12 +423,7 @@ public abstract class IOUtils extends org.apache.commons.io.IOUtils {
 	}
 
 	/**
-	 * 
-	 * @description ： 跳过指定的长度,实现断点续传
-	 * @author ： wandalong
-	 * @param input
-	 * @param offset
-	 * @throws IOException
+	 *  跳过指定的长度,实现断点续传
 	 */
 	public static long skip(InputStream input, long offset) throws IOException {
 		long at = offset;
@@ -449,10 +441,7 @@ public abstract class IOUtils extends org.apache.commons.io.IOUtils {
 	}
 
 	/**
-	 * 
-	 * @description ：跳过指定的长度,实现断点续传
-	 * @author ： wandalong
-	 * @date ：Jan 15, 2016 3:02:5wandalongrows IOException
+	 * 跳过指定的长度,实现断点续传
 	 */
 	public static void skip(FileChannel channel, long offset)
 			throws IOException {

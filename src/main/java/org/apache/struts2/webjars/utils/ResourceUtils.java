@@ -30,16 +30,12 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 
- * *******************************************************************
- * 
- * @className ： ResourceUtils
- * @description ：用来加载类，classpath下的资源文件，属性文件等。
- *              getExtendResource(StringrelativePath)方法，可以使用../符号来加载
- *              classpath外部的资源。
- * @author ： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
- * @date ： Mar 7, 2016 4:35:11 PM
- * @version V1.0
- *          *******************************************************************
+ * @className	： ResourceUtils
+ * @description	： 用来加载类，classpath下的资源文件，属性文件等。
+ *              getExtendResource(StringrelativePath)方法，可以使用../符号来加载classpath外部的资源。
+ * @author 		： <a href="https://github.com/vindell">vindell</a>
+ * @date		： 2017年9月12日 下午10:54:05
+ * @version 	V1.0
  */
 public abstract class ResourceUtils {
 
@@ -150,18 +146,12 @@ public abstract class ResourceUtils {
 	}
 
 	/**
-	 * 
-	 * ******************************************************************
-	 * 
-	 * @description ：
-	 *              必须传递资源的相对路径。是相对于classpath的路径。如果需要查找classpath外部的资源，需要使用../来查找
-	 * @author ： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
-	 * @date ：Mar 7, 2016 10:22:29 PM
+	 * @description	： 必须传递资源的相对路径。是相对于classpath的路径。如果需要查找classpath外部的资源，需要使用../来查找
+	 * @author 		： <a href="https://github.com/vindell">vindell</a>
+	 * @date 		：2017年9月12日 下午10:53:53
 	 * @param relativePath
 	 * @return
 	 * @throws IOException
-	 *             *************************************************************
-	 *             *****
 	 */
 	public static URL getRelativeResourceAsURL(String relativePath)
 			throws IOException {
@@ -331,20 +321,10 @@ public abstract class ResourceUtils {
 	}
 
 	/**
-	 * 
-	 * ******************************************************************
-	 * 
-	 * @description ：
-	 * 
-	 *              <pre>
+	 * <pre>
 	 * URLClassLoader ll = new URLClassLoader(urls);
 	 * Class&lt;?&gt; a = ll.loadClass(&quot;test.TestService&quot;);
 	 * </pre>
-	 * @author ： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
-	 * @date ：Feb 13, 2017 9:22:11 PM
-	 * @param jarResource
-	 * @return 
-	 *         ******************************************************************
 	 */
 	public static ClassLoader getURLClassLoader(URL jarResource) {
 		if (jarResource != null
@@ -462,17 +442,7 @@ public abstract class ResourceUtils {
 	}
 	
 	/**
-	 * 
-	 * ******************************************************************
-	 * 
-	 * @description ： 加载URL指定的对象到InputStream
-	 * @author ： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
-	 * @date ：Mar 7, 2016 10:40:33 PM
-	 * @param url
-	 * @return
-	 * @throws IOException
-	 *             *************************************************************
-	 *             *****
+	 * 加载URL指定的对象到InputStream
 	 */
 	public static InputStream getURLAsStream(URL originUrl) throws IOException {
         InputStream inputStream = null;

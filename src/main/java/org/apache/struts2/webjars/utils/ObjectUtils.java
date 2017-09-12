@@ -6,13 +6,11 @@ import java.util.Arrays;
 
 /**
  * 
- * *******************************************************************
  * @className	： ObjectUtils
  * @description	： TODO(描述这个类的作用)
- * @author 		： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
- * @date		： May 7, 2016 3:17:55 PM
- * @version 	V1.0 
- * *******************************************************************
+ * @author 		： <a href="https://github.com/vindell">vindell</a>
+ * @date		： 2017年9月12日 下午10:54:17
+ * @version 	V1.0
  */
 @SuppressWarnings({ "unchecked", "rawtypes" })
 public class ObjectUtils extends org.apache.commons.lang3.ObjectUtils {

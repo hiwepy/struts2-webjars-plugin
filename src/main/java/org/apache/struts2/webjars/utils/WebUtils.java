@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2011-2016, wandalong (hnxyhcwdl1003@163.com).
+ * Copyright (c) 2010-2020, vindell (https://github.com/vindell).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -39,16 +39,14 @@ import javax.servlet.http.HttpSession;
 import org.apache.commons.lang3.Validate;
 
 /**
- * *******************************************************************
+ * 
  * @className	： WebUtils
- * @description	： Miscellaneous utilities for web applications. Used by various framework classes.
+  * @description	： Miscellaneous utilities for web applications. Used by various framework classes.
  * @author 		： Rod Johnson
  * @author 		： Juergen Hoeller
  * @author 		： Sebastien Deleuze
- * @author 		： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
- * @date		： Feb 16, 2016 9:38:30 AM
- * @version 	V1.0 
- * *******************************************************************
+ * @date		： 2017年9月12日 下午10:51:50
+ * @version 	V1.0
  */
 public abstract class WebUtils {
 

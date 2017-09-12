@@ -1046,12 +1046,7 @@ public abstract class StringUtils extends org.apache.commons.lang3.StringUtils {
 	}
 
 	/**
-	 * 
-	 * @description	：获得以 ",; \t\n"分割的字符数组
-	 * @author 		： <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
-	 * @date 		：Dec 17, 2015 9:07:47 PM
-	 * @param str
-	 * @return
+	 * 获得以 ",; \t\n"分割的字符数组
 	 */
 	public static String[] tokenizeToStringArray(String str) {
 		return tokenizeToStringArray(str, CONFIG_LOCATION_DELIMITERS, true, true);
@@ -1539,26 +1534,14 @@ public abstract class StringUtils extends org.apache.commons.lang3.StringUtils {
 	}
 
 	/**
-	 * 
-	 * @description: 圆括号()包裹
-	 * @author : wandalong
-	 * @date : 2014-4-29
-	 * @time : 下午03:11:57
-	 * @param source
-	 * @return
+	 * 圆括号()包裹
 	 */
 	public static String parentheses(String source) {
 		return (source != null ? "(" + source + ")" : null);
 	}
 
 	/**
-	 * 
-	 * @description: 方括号[]包裹
-	 * @author : wandalong
-	 * @date : 2014-4-29
-	 * @time : 下午03:11:57
-	 * @param source
-	 * @return
+	 * 方括号[]包裹
 	 */
 	public static String brackets(String source) {
 		return (source != null ? "[" + source + "]" : null);
@@ -1581,14 +1564,7 @@ public abstract class StringUtils extends org.apache.commons.lang3.StringUtils {
 	}
 
 	/**
-	 * 
-	 * @description: 将String集合元素用'包围，并拼接
-	 * @author : wandalong
-	 * @date : 2014-4-29
-	 * @time : 下午02:13:09
-	 * @param list
-	 * @param separator
-	 * @return
+	 * 将String集合元素用'包围，并拼接
 	 */
 	public static String quote(String[] array, String separator) {
 		if (null != array && array.length != 0) {
@@ -1617,14 +1593,7 @@ public abstract class StringUtils extends org.apache.commons.lang3.StringUtils {
 	}
 
 	/**
-	 * 
-	 * @param string
-	 * @return
-	 * @description： 把一个字符的非Alpha字符都去掉,String string = "1\r\n1\r\n";-->结果："11";
-	 * @return: String
-	 * @method: trimToAlphaString
-	 * @author: <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
-	 * @version: 2010-12-15 下午09:06:02
+	 *  把一个字符的非Alpha字符都去掉,String string = "1\r\n1\r\n";-->结果："11";
 	 */
 	public static String trimToAlphaString(String string) {
 		if (string == null || string.length() == 0) {
@@ -1635,15 +1604,12 @@ public abstract class StringUtils extends org.apache.commons.lang3.StringUtils {
 
 	/**
 	 * 
+	 * @description	： 把一个字符的非Alpha字符都去掉，并返回每个字符的数组,String string =
+	 *               "1\r\n1\r\n";-->结果：new String[]{"1","1"};
+	 * @author 		： <a href="https://github.com/vindell">vindell</a>
+	 * @date 		：2017年9月12日 下午10:52:40
 	 * @param string
 	 * @return
-	 * @description： 把一个字符的非Alpha字符都去掉，并返回每个字符的数组,String string =
-	 *               "1\r\n1\r\n";-->结果：new String[]{"1","1"};
-	 * 
-	 * @return: String[]
-	 * @method: trimToAlphaStrings
-	 * @author: <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
-	 * @version: 2010-12-15 下午09:06:31
 	 */
 	public static String[] trimToAlphaStrings(String string) {
 		if (string == null || string.length() == 0) {
@@ -1702,15 +1668,11 @@ public abstract class StringUtils extends org.apache.commons.lang3.StringUtils {
 
 	/**
 	 * 
-	 * @description: 取得字符串高
-	 * @author : <a href="mailto:hnxyhcwdl1003@163.com">wandalong</a>
-	 * @date 下午1:45:25 2013-10-17
+	 * @description	： 取得字符串高
+	 * @author 		： <a href="https://github.com/vindell">vindell</a>
+	 * @date 		：2017年9月12日 下午10:52:32
 	 * @param str
 	 * @return
-	 * @throws
-	 * @modify by:
-	 * @modify date :
-	 * @modify description :
 	 */
 	public static int getStringHeight(String str) {
 		JLabel label = new JLabel();
@@ -1726,9 +1688,8 @@ public abstract class StringUtils extends org.apache.commons.lang3.StringUtils {
 	 *               但有时需要以字节单位获得字符串的长度。例如，“123abc长城”按字节长度计算是10，而按Unicode计算长度是8。
 	 *               为了获得10，需要从头扫描根据字符的Ascii来获得具体的长度。如果是标准的字符，Ascii的范围是0至255，
 	 *               如果是汉字或其他全角字符，Ascii会大于255。 因此，可以编写如下的方法来获得以字节为单位的字符串长度。
-	 * @author : wandalong
-	 * @date 2015-4-15
-	 * @time 上午10:01:10
+	 * @author 		： <a href="https://github.com/vindell">vindell</a>
+	 * @date 		：2017年9月12日 下午10:52:24
 	 * @param s
 	 * @return
 	 */
@@ -1747,11 +1708,10 @@ public abstract class StringUtils extends org.apache.commons.lang3.StringUtils {
 
 	/**
 	 * 
-	 * @description: 基本原理是将字符串中所有的非标准字符（双字节字符）替换成两个标准字符（**，或其他的也可以）。
+	 * @description	： 基本原理是将字符串中所有的非标准字符（双字节字符）替换成两个标准字符（**，或其他的也可以）。
 	 *               这样就可以直接例用length方法获得字符串的字节长度了
-	 * @author : wandalong
-	 * @date 2015-4-15
-	 * @time 上午10:00:26
+	 * @author 		： <a href="https://github.com/vindell">vindell</a>
+	 * @date 		：2017年9月12日 下午10:52:13
 	 * @param s
 	 * @return
 	 */
@@ -1763,10 +1723,9 @@ public abstract class StringUtils extends org.apache.commons.lang3.StringUtils {
 
 	/**
 	 * 
-	 * @description: 按特定的编码格式获取长度
-	 * @author : wandalong
-	 * @date 2015-4-15
-	 * @time 上午10:00:15
+	 * @description	： 按特定的编码格式获取长度
+	 * @author 		： <a href="https://github.com/vindell">vindell</a>
+	 * @date 		：2017年9月12日 下午10:52:04
 	 * @param str
 	 * @param code
 	 * @return
