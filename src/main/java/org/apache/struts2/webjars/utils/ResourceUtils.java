@@ -33,7 +33,7 @@ import org.slf4j.LoggerFactory;
  * @className	： ResourceUtils
  * @description	： 用来加载类，classpath下的资源文件，属性文件等。
  *              getExtendResource(StringrelativePath)方法，可以使用../符号来加载classpath外部的资源。
- * @author 		： <a href="https://github.com/vindell">vindell</a>
+ * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
  * @date		： 2017年9月12日 下午10:54:05
  * @version 	V1.0
  */
@@ -147,7 +147,7 @@ public abstract class ResourceUtils {
 
 	/**
 	 * @description	： 必须传递资源的相对路径。是相对于classpath的路径。如果需要查找classpath外部的资源，需要使用../来查找
-	 * @author 		： <a href="https://github.com/vindell">vindell</a>
+	 * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
 	 * @date 		：2017年9月12日 下午10:53:53
 	 * @param relativePath
 	 * @return

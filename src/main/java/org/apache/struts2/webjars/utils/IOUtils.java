@@ -34,7 +34,7 @@ import org.apache.commons.lang3.Validate;
  * 
  * @className	： IOUtils
  * @description	：  扩展org.apache.commons.io.IOUtils工具对象
- * @author 		： <a href="https://github.com/vindell">vindell</a>
+ * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
  * @date		： 2017年9月12日 下午10:54:38
  * @version 	V1.0
  */

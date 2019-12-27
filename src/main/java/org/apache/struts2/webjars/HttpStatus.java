@@ -4,7 +4,7 @@ package org.apache.struts2.webjars;
  * 
  * @className	： HttpStatus
  * @description	： 标准Http状态码+自定义Http状态码
- * @author 		： <a href="https://github.com/vindell">vindell</a>
+ * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
  * @date		： 2017年5月28日 下午10:44:48
  * @version 	V1.0
  */

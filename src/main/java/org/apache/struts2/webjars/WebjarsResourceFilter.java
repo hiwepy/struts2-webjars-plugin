@@ -34,7 +34,7 @@ import org.webjars.WebJarAssetLocator;
  * 
  * @className	： WebjarsResourceFilter
  * @description	： TODO(描述这个类的作用)
- * @author 		： <a href="https://github.com/vindell">vindell</a>
+ * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
  * @date		： 2017年5月29日 下午4:28:19
  * @version 	V1.0
  */

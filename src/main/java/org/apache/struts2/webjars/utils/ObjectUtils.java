@@ -8,7 +8,7 @@ import java.util.Arrays;
  * 
  * @className	： ObjectUtils
  * @description	： TODO(描述这个类的作用)
- * @author 		： <a href="https://github.com/vindell">vindell</a>
+ * @author 		： <a href="https://github.com/hiwepy">hiwepy</a>
  * @date		： 2017年9月12日 下午10:54:17
  * @version 	V1.0
  */
